@@ -77,6 +77,12 @@ footer {
     color: #FFD700;
 }
 
+.texte-main li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
 
 /* ACCUEIL */
 

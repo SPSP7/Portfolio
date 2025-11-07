@@ -16,7 +16,7 @@
                 <li><a href="formation.html">Présentation BTS</a></li>
                 <li><a href="expériences.html">Expériences</a></li>
                 <li><a class="active" href="projets.html">Projets</a></li>
-                <li><a href="veille techno.html">Veille</a></li>
+                <li><a href="veille.html">Veille</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </header><br/>
@@ -25,72 +25,182 @@
             <h1>PROJETS RÉALISÉS</h1>
         </section>
         <!-- Contenu principal -->
-        <main class="forme-page-2">
-            <span class="forme-page">
-                <img src="../IMG/Projets.png">
-                <p>Dans cette section vous trouverez toutes les projets que j'ai réalisés.</p>
-            </span>
-            <span class="texte-box">
-                <div class="box-sommaire">
-                    <h1>SOMMAIRE</h1>
+        <main>
+            <section class="forme-page-2">
+                <span class="forme-page">
+                    <img src="../IMG/Projets.png">
+                    <p>Dans cette section vous trouverez toutes les projets que j'ai réalisés.</p>
+                </span>
+                <span class="texte-box">
+                    <div class="box-sommaire">
+                        <h1>SOMMAIRE</h1>
+                        <br>
+                        <ul>
+                            <li><span><a href="#FermeProxmox">Ferme de Serveur Proxmox</a></span></li>
+                            <li><span><a href="#NuitInfo">Animation de la Nuit de l'Informatique</a></span></li>
+                            <li><span><a href="#InfraInfo">Montage d'une Infrastructure Informatique</a></span></li>
+                        </ul>
+                    </div>
                     <br>
-                    <ul>
-                        <li><span><a href="#FermeProxmox">Ferme de Serveur Proxmox</a></span></li>
-                        <li><span><a href="#NuitInfo">Animation de la Nuit de l'Informatique</a></span></li>
-                        <li><span><a href="#InfraInfo">Montage d'une Infrastructure Informatique</a></span></li>
-                    </ul>
-                </div>
-                <br>
-                <h2 id="FermeProxmox">Ferme de Serveur Proxmox</h2> 
-                <div class="box">
-                    <ul>
-                        <li><span>Contexte :</span> Ce projet a été réalisé dans le cadre du PPE en BTS SIO 1ère année. Sous proposition de M. Ghislain PARENT, professeur en BTS SIO, ce projet avait pour objectif la mise en place d'une ferme de serveur Proxmox. </li>
-                        <li><span>Équipe :</span> La composition de l'équipe était :</li>
+                    <h2 id="FermeProxmox">Ferme de Serveur Proxmox</h2> 
+                    <div class="box">
                         <ul>
-                            <li>M. Tristan MERESSE (Étudiant)</li>
-                            <li>M. Killian FOL (Étudiant)</li>
-                            <li>M. Clément MONTEIL (Étudiant)</li>
-                            <li>M. Ghislain PARENT (Superviseur)</li>
+                            <li><span>Contexte :</span> Ce projet a été réalisé dans le cadre du PPE en BTS SIO 1ère année. Sous proposition de M. Ghislain PARENT, professeur en BTS SIO, ce projet avait pour objectif la mise en place d'une ferme de serveur Proxmox. </li>
+                            <li><span>Équipe :</span> La composition de l'équipe était :</li>
+                            <ul>
+                                <li>M. Tristan MERESSE (Étudiant)</li>
+                                <li>M. Killian FOL (Étudiant)</li>
+                                <li>M. Clément MONTEIL (Étudiant)</li>
+                                <li>M. Ghislain PARENT (Superviseur)</li>
+                            </ul>
+                            <li><span>Localisation :</span> Lycée-Campus Saint-Denis, Annonay (07)</li>
+                            <li><span>Dates :</span> Février à Mai 2025</li>
+                            <li><span>Outils Utilisés :</span> Proxmox, Trello, SAN, PVMDSM</li>
+                            <li><span>Livrables rendus à la fin du projet :</span></li>
+                            <ul>
+                                <li><a href="../DOC/Cahier des charges.pdf" target="_blank"> Cahier des charges</a></li>
+                                <li><a href="../DOC/Compte-Rendu Projet PPE.pdf" target="_blank"> Compte-rendu</a></li>
+                                <li><a href="../DOC/ReadMe.pdf" target="_blank"> ReadMe</a></li>
+                            </ul>
                         </ul>
-                        <li><span>Localisation :</span> Lycée-Campus Saint-Denis, Annonay (07)</li>
-                        <li><span>Dates :</span> Février à Mai 2025</li>
-                        <li><span>Outils Utilisés :</span> Baie Informatique, Proxmox, Trello</li>
-                    </ul>
-                </div>
+                    </div>
+                </span>
                 <br>
+                <section class="texte-main">
+                    <h1>Contexte et objectif du projet</h1>
+                    <p>Dans le cadre du Projet Professionel Encadré (PPE), M. Ghislain Parent nous a proposé la mise en place d’une ferme de serveurs Proxmox, destinée à la création et à la gestion de machines virtuelles utilisables dans de futurs cours. Mon équipe, composée de Killian Fol, Clément Monteil et moi-même, a été chargée de mettre en œuvre ce projet.</p>
+                    <p>L’objectif principal était de déployer une infrastructure de virtualisation reposant sur Proxmox VE, un hyperviseur open source. Pour cela, nous devions :</p>
+                    <ul>
+                        <li>Monter une baie informatique destinée à accueillir les équipements nécessaires (serveurs, SAN, switchs) ;</li>
+                        <li>Installer Proxmox sur les différents serveurs et rendre leur accès possible à distance via l’interface web ;</li>
+                        <li>Configurer le SAN afin qu’il puisse héberger les machines virtuelles créées sur la ferme de serveurs.</li>
+                    </ul>
+                    <h1>Déroulement du projet</h1>
+                    <p>Nous avons tout d’abord rédigé un cahier des charges, définissant les besoins, les contraintes et les objectifs du projet. Afin d’assurer un suivi rigoureux de l’avancement, nous avons mis en place un tableau Trello, accompagné d’un planning précisant les étapes et les échéances.</p>
+                    <p>La première étape technique a consisté à installer la baie :</p>
+                    <ul>
+                        <li>Nous avons racké les serveurs, le SAN et les switchs, puis procédé aux branchements et à l’adressage IP des différents équipements.</li>
+                        <li>À l’aide d’un clavier et d’un écran connectés localement, nous avons ensuite installé Proxmox sur chaque serveur via une clé USB bootable.</li>
+                    </ul>
+                    <p>Une fois l’installation terminée, nous avons configuré l’interface web de Proxmox, permettant la gestion à distance des machines virtuelles.</p>
+                    <p>Nous avons également pris en main le SAN (Storage Area Network) à l’aide du logiciel PowerVault Modular Disk Storage Manager (PVMDSM). Cette étape a nécessité la configuration des adresses IP du SAN et de ses ports, la réinitialisation des espaces de stockage, la réalisation d’un inventaire des disques et enfin la création des volumes RAID destinés à accueillir les futures machines virtuelles.</p>
+                    <h1>Outils et technologies utilisés</h1>
+                    <p>Au cours de ce projet, nous avons utilisé plusieurs outils et technologies :</p>
+                    <ul>
+                        <li>Proxmox VE et son interface web pour la virtualisation et l’administration des serveurs ;</li>
+                        <li>Trello pour la gestion de projet et le suivi des tâches ;</li>
+                        <li>PowerVault Modular Disk Storage Manager (PVMDSM) pour la configuration et la gestion du SAN.</li>
+                    </ul>
+                </section>
+            </section>
+                <br>
+                    <section class="sections-accueil-boxes">
+                        <div class="sections-accueil-box">
+                            <img src="../IMG/Proxmox.jpg">
+                            <p><em>Aperçu de l'interface Web Proxmox</em></p>
+                        </div>
+                        <div class="sections-accueil-box">
+                            <img src="../IMG/PVMDSM 1.png">
+                            <p><em>Aperçu du logiciel PowerVault Modular Disk Storage Manager</em></p>
+                        </div>
+                        <div class="sections-accueil-box">
+                            <img src="../IMG/PVMDSM 2.jpg">
+                            <p><em>Aperçu du logiciel PowerVault Modular Disk Storage Manager</em></p>
+                        </div>
+                    </section>
+                <br>
+            <section class="forme-page-2">
+                <section class="texte-main">
+                    <h1>Compétences mobilisés</h1>
+                    <p>Ce projet nous a permis de mobiliser plusieurs compétences du référentiel E5, notamment</p>
+                    <ul>
+                        <li>(4) Travailler en mode projet, à travers la planification, la répartition et le suivi des tâches ;</li>
+                        <li>(5) Mettre à disposition des utilisateurs un service informatique, grâce à l’installation et à la configuration de la ferme de serveurs Proxmox et à la mise en place de son interface d’accès web.</li>
+                    </ul>
+                    <h1>Résultats et difficultés rencontrées</h1>
+                    <p>Le projet n’a pas pu être mené à son terme en raison de contraintes matérielles. En effet, le matériel nécessaire pour relier le SAN aux serveurs Proxmox n’était pas en notre possession, ce qui a empêché l’hébergement des machines virtuelles sur le SAN.</p>
+                    <p>Malgré cela, nous avons pu :</p>
+                    <ul>
+                        <li>Monter intégralement la baie et connecter l’ensemble des équipements ;</li>
+                        <li>Installer et rendre opérationnels les serveurs Proxmox, accessibles via l’interface web ;</li>
+                        <li>Prendre en main et configurer le SAN de manière partielle.</li>
+                    </ul>
+                </section>
+            </section>
+                <br>
+                    <section class="sections-accueil-boxes">
+                        <div class="sections-accueil-box">
+                            <img src="../IMG/Baie Avant.jpg">
+                            <p><em>Aperçu de la baie à l'avant</em></p>
+                        </div>
+                        <div class="sections-accueil-box">
+                            <img src="../IMG/Baie Arrière.jpg">
+                            <p><em>Aperçu de la baie à l'arrière</em></p>
+                        </div>
+                    </section>
+                <br>
+                <section class="forme-page-2">
+                    <section class="texte-main">
+                        <h1>Bilan du projet</h1>
+                        <p>Ce projet s’est révélé particulièrement formateur, notamment en vu de la seconde année en BTS SIO, SISR. Ce projet nous a permis de mettre en pratique nos connaissances techniques acquises durant l’année, tout en découvrant la mise en place d’une baie informatique, ainsi que l’installation et la configuration d’un hyperviseur.</p>
+                        <p>Nous avons atteint tous les objectifs réalisables compte tenu du matériel disponible et du temps imparti. Cependant, nous avons rencontré certaines difficultés organisationnelles : il nous arrivait d’être bloqués sur des tâches techniques, et sans la présence d’un enseignant expérimenté, la résolution de problèmes pouvant s’avérer longue. De plus, le travail ne pouvant être poursuivi qu’en cours, il était essentiel d'être productif chaque séance.</p>
+                        <p>Enfin, une meilleure répartition des tâches aurait permis un avancement plus fluide : nous avions tendance à travailler ensemble sur chaque étape, au lieu de diviser le travail.</p>
+                    </section>
+                </section>
+                <br>
+            <section class="forme-page-2">
                 <h2 id="NuitInfo">Animation de la Nuit de l'Informatique</h2>
-                <div class="box">
-                    <ul>
-                        <li><span>Contexte :</span> Ce projet a été réalisé en BTS SIO 2nde année. L'objectif était de proposer diverses activités lors de la Nuit de l'Informatique afin de renforcer la cohésion au sein des membres de la filière informatique.</li>
-                        <li><span>Équipe :</span> La composition de l'équipe était :</li>
+                <span class="texte-box">
+                    <div class="box">
                         <ul>
-                            <li>M. Tristan MERESSE (Étudiant)</li>
-                            <li>M. Killian FOL (Étudiant)</li>
-                            <li>M. Lucas CHAROY (Étudiant)</li>
-                            <li>M. William KUNSTMANN (Étudiant)</li>
-                            <li>M. Kevin LAVAKA (Étudiant)</li>
-                            <li>M. Ali-Guillaume GERY (Étudiant)</li>
+                            <li><span>Contexte :</span> Ce projet a été réalisé en BTS SIO 2nde année. L'objectif était de proposer diverses activités lors de la Nuit de l'Informatique afin de renforcer la cohésion au sein des membres de la filière informatique.</li>
+                            <li><span>Équipe :</span> La composition de l'équipe était :</li>
+                            <ul>
+                                <li>M. Tristan MERESSE (Étudiant)</li>
+                                <li>M. Killian FOL (Étudiant)</li>
+                                <li>M. Lucas CHAROY (Étudiant)</li>
+                                <li>M. William KUNSTMANN (Étudiant)</li>
+                                <li>M. Kevin LAVAKA (Étudiant)</li>
+                                <li>M. Ali-Guillaume GERY (Étudiant)</li>
+                            </ul>
+                            <li><span>Localisation :</span> Lycée-Campus Saint-Denis, Annonay (07)</li>
+                            <li><span>Dates :</span> Septembre à Décembre 2025</li>
                         </ul>
-                        <li><span>Localisation :</span> Lycée-Campus Saint-Denis, Annonay (07)</li>
-                        <li><span>Dates :</span> Septembre à Décembre 2025</li>
-                        <li><span>Outils Utilisés :</span> Kahoot</li>
-                    </ul>
-                </div>
+                    </div>
+                </span>
+
                 <br>
+                <section class="texte-main">
+                    <p><em>Prochainement</em></p>
+                </section>
+                <br>
+
+            </section>
+                
+            <section class="forme-page-2">
                 <h2 id="InfraInfo">Montage d'une Infrastructure Informatique</h2>
-                <div class="box">
-                    <ul>
-                        <li><span>Contexte :</span> Ce projet a été réalisé dans le cadre du SISR et de l'examen E6 en BTS SIO 2nde année. L'objectif était la mise en place d'une infrastructure informatique complète à destination d'une entreprise fictive.</li>
-                        <li><span>Équipe :</span> La composition de l'équipe était :</li>
+                <span class="texte-box">
+                    <div class="box">
                         <ul>
-                            <li>M. Tristan MERESSE (Étudiant)</li>
-                            <li>M. Killian FOL (Étudiant)</li>
+                            <li><span>Contexte :</span> Ce projet a été réalisé dans le cadre du SISR et de l'examen E6 en BTS SIO 2nde année. L'objectif était la mise en place d'une infrastructure informatique complète à destination d'une entreprise fictive.</li>
+                            <li><span>Équipe :</span> La composition de l'équipe était :</li>
+                            <ul>
+                                <li>M. Tristan MERESSE (Étudiant)</li>
+                                <li>M. Killian FOL (Étudiant)</li>
+                            </ul>
+                            <li><span>Localisation :</span> Lycée-Campus Saint-Denis, Annonay (07)</li>
+                            <li><span>Dates :</span> Septembre à Décembre 2025</li>
                         </ul>
-                        <li><span>Localisation :</span> Lycée-Campus Saint-Denis, Annonay (07)</li>
-                        <li><span>Dates :</span> Septembre à Décembre 2025</li>
-                        <li><span>Outils Utilisés :</span> Baie Informatique, Hyper-V, Microsoft Windows Server 2022, Routeur, Switch, Active Directory, Serveur Web Linux, Trello</li>
-                    </ul>
-                </div>
+                    </div>
+                </span>
+
+                <br>
+                <section class="texte-main">
+                    <p><em>Prochainement</em></p>
+                </section>
+                <br>
+
+            </section>
         </main>
         <!-- Pied de page -->
         <footer>
