@@ -399,3 +399,22 @@ footer {
   .carte-retourne .arriere {
     transform: rotateY(180deg);
   }
+
+  /* style pour la vidéo*/
+
+  .video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.video-box video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
