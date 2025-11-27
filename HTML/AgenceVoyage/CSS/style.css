@@ -1,0 +1,424 @@
+/*      STYLE POUR LES PAGES GENERALES      */
+
+.paragraph {
+
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Bannière */
+.banner {
+    background-color: #ac2965;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Barre de navigation */
+.navbar {
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #4472c4;
+  }
+  
+  li {
+	float: left;
+    font-size: 1.3rem;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover {
+	background-color: #943a62;
+  }
+
+  .active {
+	background-color: #ac2965;
+  }
+
+}
+
+/*Pied de page*/
+footer {
+    background-color: #ac2965;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+	font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* ACCUEIL */
+
+
+.welcome {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.welcome img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.services {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #4472c4;
+    margin-bottom: 2rem;
+}
+
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-box {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-box img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    color: #4472c4;
+    margin-bottom: 0.5rem;
+}
+
+.service-box p {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Présentation */
+
+
+.presentation-page {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texte {
+    margin-bottom: 2rem;
+}
+
+.texte p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.texte h2 {
+    color: #4472c4;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pictures img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Contact */
+
+
+.contact-page {
+    text-align: center;
+    margin: 2rem auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.contact-page img {
+    width: 700px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.contact-table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.contact-table td {
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.contact-table td:first-child {
+    font-weight: bold;
+    color: #4472c4;
+    width: 30%;
+}
+
+.contact-table td:last-child {
+    color: #333;
+}
+
+.contact-table a {
+    color: #ac2965;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-table a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Réalisations */
+
+
+.realisations {
+    display: flex; /*Met les éléments en ligne.*/
+    flex-wrap: wrap; /*Permet aux boîtes de passer à la ligne suivante si l'espace horizontal est insuffisant.*/
+    gap: 1.5rem; /* Définit un espace entre les boîtes horizontalement et verticalement.*/
+    justify-content: center; /*Centre les boîtes horizontalement dans le conteneur.*/
+    margin: 2rem auto; /*Ajoute une marge extérieure et centre la section horizontalement.*/
+    max-width: 1200px; /*Limite la largeur maximale de la section pour éviter qu'elle ne devienne trop large.*/
+}
+
+
+.realisation-box {
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /*Arrondit les coins.*/
+    overflow: hidden; /*Cache tout contenu qui dépasse des limites de la boîte.*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /*Ajoute une transition fluide lors des transformations et changements d'ombre.*/
+}
+
+
+.realisation-box:hover {
+    transform: scale(1.05); /*Agrandit légèrement la boîte lors du survol avec le curseur.*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /*Accentue l'ombre pour mettre en évidence la boîte.*/
+}
+
+
+.realisation-box img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /*Ajoute une ligne séparatrice grise claire sous l'image.*/
+}
+
+
+.realisation-box h2 {
+    color: #4472c4;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem; /*Ajoute un espace extérieur au-dessus et en dessous du titre.*/
+}
+
+
+.realisation-box p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+
+.realisation-box a {
+    text-decoration: none; /*Supprime le soulignement par défaut des liens.*/
+    color: inherit; /*Utilise la même couleur que le texte environnant.*/
+    display: block; /* Permet au lien de couvrir tout le contenu de la boîte.*/
+}
+
+
+
+/*          STYLE POUR LES PAGES SUR LES VOYAGES                */
+
+
+
+/*Informations Voyages*/
+.info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+	font-size: 1.1rem;
+}
+
+.info h2 {
+    color: #4472c4;
+}
+
+.info img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Description Voyages*/
+.description {
+    margin: 2rem auto;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+.description h2 {
+    color: #4472c4;
+}
+
+.day-description {
+    margin-bottom: 2rem;
+	font-size: 1.1rem;
+}
+
+.day-description h3 {
+    color: #4472c4;
+    margin-bottom: 0.5rem;
+}
+
+/*Prix Voyages*/
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.price img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+/*Box pour les prix*/
+
+.yellowbox {
+    width: 100%;
+    max-width: 800px; /*Limite la largeur our les écrans larges.*/
+    margin: 2rem auto; /*Ajoute un espace extérieur de en haut et en bas, et centre horizontalement.*/
+    padding: 1.5rem; /*Ajoute un espace intérieur sur tous les côtés.*/
+    border-radius: 10px; /*Arrondit les coins*/
+    background: linear-gradient(180deg, #fffde7, #fff9c4); /*Ajoute un dégradé d'un jaune clair vers un jaune plus foncé.*/
+    border: 1px solid #e0c200;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+
+.yellowbox p {
+    font-weight: bold; /*Met le texte en gras.*/
+    color: #ac2965;
+    margin-bottom: 1rem; /*Ajoute un espace sous le paragraphe.*/
+}
+
+/*Liste pour ce qui est compris dans le prix*/
+
+.yellowbox ul {
+    list-style-type: none; /*Supprime les puces par défaut de la liste.*/
+    padding: 0; /*Retire le padding intérieur par défaut de la liste.*/
+    margin: 0; /*Retire la marge par défaut de la liste.*/
+}
+
+.yellowbox ul li {
+    margin-bottom: 0.5rem; /*Ajoute un espace entre chaque élément de la liste.*/
+    padding-left: 1.5rem; /*Ajoute un espace intérieur à gauche pour compenser l’icône.*/
+    position: relative; /*Permet de positionner l’icône avec `::before` en utilisant des coordonnées relatives à chaque `li`.*/
+    font-size: 1rem;
+    line-height: 1.5; /*Augmente l’espacement vertical entre les lignes.*/
+}
+
+.yellowbox ul li::before {
+    position: absolute;
+    left: 0; /*Aligne l’icône sur le côté gauche.*/
+    top: 0; /*Positionne l’icône en haut.*/
+    font-weight: bold; /*Met l’icône en gras.*/
+    font-size: 1.2rem; /*Augmente légèrement la taille de l’icône.*/
+}
+
+/*Coche verte pour les inclus*/
+.yellowbox ul.included li::before {
+    content: "✔";
+    color: #28a745;
+}
+
+/*Croix rouge pour les non-inclus*/
+.yellowbox ul.not-included li::before {
+    content: "✖";
+    color: #dc3545;
+}
