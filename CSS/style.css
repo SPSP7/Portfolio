@@ -2,7 +2,7 @@
 
 /* Bannière */
 .banner {
-    background-color: #FFD700;
+    background-color: #0080FF;
     color: white;
     text-align: center;
     padding: 0.2rem;
@@ -18,7 +18,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #FFD700;
+	background-color: #0080FF;
   }
   
   li {
@@ -36,12 +36,12 @@ ul {
   
   li a:hover {
 	background-color: white;
-    color: #FFD700;
+    color: #0080FF;
   }
 
   .active {
 	background-color: white;
-    color: #FFD700;
+    color: #0080FF;
   }
 
 }
@@ -53,7 +53,7 @@ html, body { /* Garantit que la page occupe tout l'écran */
 
 /*Pied de page*/
 footer {
-    background-color: #FFD700;
+    background-color: #0080FF;
     color: white;
     text-align: center;
     padding: 0.2rem;  /*Hauteur du Bandeau*/ 
@@ -69,12 +69,12 @@ footer {
 }
 
 .texte-main h1,h2,h3 {
-    color: #FFD700;
+    color: #0080FF;
     font-size: 2rem;
 }
 
 .texte-main a {
-    color: #FFD700;
+    color: #0080FF;
 }
 
 .texte-main li {
@@ -113,7 +113,7 @@ footer {
 
 .sections-accueil h2 {
     font-size: 2rem;
-    color: #FFD700;
+    color: #0080FF;
     margin-bottom: 2rem;
 }
 
@@ -148,7 +148,7 @@ footer {
 
 .sections-accueil-box h3 {
     font-size: 1.5rem;
-    color: #FFD700;
+    color: #0080FF;
     margin-bottom: 0.5rem;
 }
 
@@ -226,7 +226,7 @@ footer {
 }
 
 .forme-table td a {
-    color: #FFD700;
+    color: #0080FF;
 }
 
 .forme-table td.logoSaintDenis {
@@ -248,7 +248,7 @@ footer {
 
 .forme-table td:first-child {
     font-weight: bold;
-    color: #FFD700;
+    color: #0080FF;
     width: 30%;
 }
 
@@ -269,11 +269,11 @@ footer {
 }
 
 .texte-box h1,h2,h3 {
-    color: #FFD700;
+    color: #0080FF;
 }
 
 .texte-box a {
-    color: #FFD700;
+    color: #0080FF;
 }
 
 .texte-box li {
