@@ -1,0 +1,119 @@
+//////////////////////////////////////////////
+		ALPHA CENTAURI
+//////////////////////////////////////////////
+
+------PC------
+
+AC-PC1
+AC-PC2
+AC-PC-VIP
+
+OS PC : Windows 11
+
+------Hyperviseur------
+
+OS Hyperviseur : Hyper-V (Windows Server 2022)
+
+------Plages réseaux------
+
+Sous-réseau 1 (10.20.2.0/26) - VLAN 10 (DMZ)
+- Masque de sous-réseau : 255.255.255.192
+- Adresse réseau : 10.20.2.0
+- Premier hôte : 10.20.2.1
+- Dernier hôte : 10.20.2.61
+- Passerelle : 10.20.2.62
+- Adresse de diffusion : 10.20.2.63
+- Nombre d'hôtes : 62
+
+Sous-réseau 2 (10.20.2.64/26) – VLAN 20 (Serveurs)
+- Masque de sous-réseau : 255.255.255.192
+- Adresse réseau : 10.20.2.64
+- Premier hôte : 10.20.2.65
+- Dernier hôte : 10.20.2.125
+- Passerelle : 10.20.2.126
+- Adresse de diffusion : 10.20.2.127
+- Nombre d'hôtes : 62
+
+Sous-réseau 3 (10.20.2.128/26) – VLAN 30 (Clients)
+- Masque de sous-réseau : 255.255.255.192
+- Adresse réseau : 10.20.2.128
+- Premier hôte : 10.20.2.129
+- Dernier hôte : 10.20.2.189
+- Passerelle : 10.20.2.190
+- Adresse de diffusion : 10.20.2.191
+- Nombre d'hôtes : 62
+ 
+Sous-réseau 4 (10.20.2.192/26) – VLAN 40 (Secours)
+- Masque de sous-réseau : 255.255.255.192
+- Adresse réseau : 10.20.2.192
+- Premier hôte : 10.20.2.193
+- Dernier hôte : 10.20.2.253
+- Passerelle : 10.20.2.254
+- Adresse de diffusion : 10.20.2.255
+- Nombre d'hôtes : 62
+
+Adresse IP WAN (Routeur) : 10.21.3.202
+
+Nom de domaine : AlphaCentauri.local
+
+------Utilisateurs et Mot de passes------
+
+Switch
+- Nom : SW_AC
+- Secret : tjaM%2026%kdeF
+
+Routeur
+- Nom RT_AC
+- Secret : kdeF%2026%tjaM
+
+Hyperviseur
+- Utilisateur : Administrateur
+- Mot de passe : tjaM%2026%kdeF
+
+VM Active Directory
+- Utilisateur : Administrateur
+- Mot de passe : tjaM%2026%kdeF
+
+VM TrueNas
+- Utilisateur : admin
+- Mot de passe : tjaM%2026%kdeF
+
+VM Serveur Web (Élévation en mode privilège)
+- Utilisateur : root
+- Mot de passe : tjaM%2026%kdeF
+
+Personnels de l'entreprise
+- Utilisateur : Directeur
+- Mot de passe : abc!123
+
+- Utilisateur : Assistante Direction
+- Mot de passe : abc!123
+
+- Utilisateur : DRH
+- Mot de passe : abc!123
+
+- Utilisateur : Comptable
+- Mot de passe : abc!123
+
+- Utilisateur : Directeur Commercial
+- Mot de passe : abc!123
+
+- Utilisateur : Commercial1
+- Mot de passe : abc!123
+
+- Utilisateur : Commercial2
+- Mot de passe : abc!123
+
+- Utilisateur : Directeur Technique
+- Mot de passe : abc!123
+ 
+- Utilisateur : Ingénieur d'étude1
+- Mot de passe : abc!123
+
+- Utilisateur : Ingénieur d'étude2
+- Mot de passe : abc!123
+
+
+
+
+
