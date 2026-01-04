@@ -140,18 +140,24 @@
             </section>
                 <br>
                     <section class="sections-accueil-boxes">
-                        <div class="sections-accueil-box">
+                        <div class="sections-accueil-box image-popup">
                             <img src="../IMG/Proxmox.jpg">
                             <p><em>Aperçu de l'interface Web Proxmox</em></p>
                         </div>
-                        <div class="sections-accueil-box">
+                        <div class="sections-accueil-box image-popup">
                             <img src="../IMG/PVMDSM 1.png">
                             <p><em>Aperçu du logiciel PowerVault Modular Disk Storage Manager</em></p>
                         </div>
-                        <div class="sections-accueil-box">
+                        <div class="sections-accueil-box image-popup">
                             <img src="../IMG/PVMDSM 2.jpg">
                             <p><em>Aperçu du logiciel PowerVault Modular Disk Storage Manager</em></p>
                         </div>
+
+                      <!-- Modal unique -->
+                      <div class="modal" id="imageModal">
+                       <span class="close">&times;</span>
+                       <img class="modal-content" id="modalImage">
+                      </div>
                     </section>
                 <br>
             <section class="forme-page-2">
@@ -174,11 +180,11 @@
             </section>
                 <br>
                     <section class="sections-accueil-boxes">
-                        <div class="sections-accueil-box">
+                        <div class="sections-accueil-box image-popup">
                             <img src="../IMG/Baie Avant.jpg">
                             <p><em>Aperçu de la baie à l'avant</em></p>
                         </div>
-                        <div class="sections-accueil-box">
+                        <div class="sections-accueil-box image-popup">
                             <img src="../IMG/Baie Arrière.jpg">
                             <p><em>Aperçu de la baie à l'arrière</em></p>
                         </div>
@@ -236,18 +242,11 @@
             </section>
                 <br>
                     <section class="sections-accueil-boxes">
-                        <div class="sections-accueil-box" id="openModal">
+                        <div class="sections-accueil-box image-popup">
                             <img src="../IMG/Trello_NuitInfo.png">
                             <p><em>Aperçu de notre Trello</em></p>
                         </div>
                     </section>
-         
-         <!-- Fenêtre contextuelle -->
-         <div class="modal" id="imageModal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="modalImage">
-         </div>
-         
                 <br>
             <section class="forme-page-2">
                 <section class="texte-main">
@@ -308,28 +307,30 @@
                     <h1>Bilan du projet</h1>
                     <p>TBD</p>
                 </section>
-                <!--Script JavaScript pour faire en sorte que les images grossissent lorsque l'on clique dessus-->
+               <!--Script JavaScript pour faire en sorte que les images grossissent lorsque l'on clique dessus-->
                 <script>
-                 const box = document.getElementById('openModal');
-                 const modal = document.getElementById('imageModal');
-                 const modalImg = document.getElementById('modalImage');
-                 const closeBtn = document.querySelector('.modal .close');
-                 
-                 box.addEventListener('click', () => {
-                  const img = box.querySelector('img');
-                  modal.style.display = 'flex';
-                  modalImg.src = img.src;
-                 });
-                 
-                 closeBtn.addEventListener('click', () => {
-                  modal.style.display = 'none';
-                 });
-                 
-                 modal.addEventListener('click', (e) => {
-                  if (e.target === modal) {
-                   modal.style.display = 'none';
-                  }
-                 });
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    const closeBtn = document.querySelector('.modal .close');
+                    
+                    document.querySelectorAll('.image-popup').forEach(box => {
+                        box.addEventListener('click', () => {
+                            const img = box.querySelector('img');
+                            modal.style.display = 'flex';
+                            modalImg.src = img.src;
+                            modalImg.alt = img.alt;
+                        });
+                    });
+                    
+                    closeBtn.addEventListener('click', () => {
+                        modal.style.display = 'none';
+                    });
+                    
+                    modal.addEventListener('click', e => {
+                        if (e.target === modal) {
+                            modal.style.display = 'none';
+                        }
+                    });
                 </script>
         </main>
         <!-- Pied de page -->
