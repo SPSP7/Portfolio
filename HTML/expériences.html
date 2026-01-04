@@ -277,6 +277,30 @@
                         });
                     });
                 </script>
+
+                <!--Script JavaScript pour faire en sorte que les images grossissent lorsque l'on clique dessus-->
+                <script>
+                 const box = document.getElementById('openModal');
+                 const modal = document.getElementById('imageModal');
+                 const modalImg = document.getElementById('modalImage');
+                 const closeBtn = document.querySelector('.modal .close');
+                 
+                 box.addEventListener('click', () => {
+                  const img = box.querySelector('img');
+                  modal.style.display = 'flex';
+                  modalImg.src = img.src;
+                 });
+                 
+                 closeBtn.addEventListener('click', () => {
+                  modal.style.display = 'none';
+                 });
+                 
+                 modal.addEventListener('click', (e) => {
+                  if (e.target === modal) {
+                   modal.style.display = 'none';
+                  }
+                 });
+                </script>
         </main>
         <!-- Pied de page -->
         <footer>
