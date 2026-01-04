@@ -163,15 +163,6 @@
                         </div>
                     </div>
                 </section>
-                
-                    <!--Script JavaScript pour faire en sorte que les cartes des baies sur retournent lorsque l'on clique dessus-->
-                    <script>
-                        document.querySelectorAll('.carte-retourne').forEach(card => { 
-                            card.addEventListener('click', () => {
-                                card.classList.toggle('inverse');
-                            });
-                        });
-                    </script>
                 <section class="forme-page-2">
                     <section class="texte-main">
                         <br>
@@ -271,7 +262,15 @@
                         <p>J’ai néanmoins rencontré certaines difficultés, notamment pour trouver le juste équilibre entre autorité et bienveillance. Il n’était pas toujours évident de se faire respecter par les élèves tout en maintenant une relation de confiance. Ma principale appréhension était de prendre une décision inadaptée, trop stricte ou, au contraire, trop permissive.</p>
                         <p>Enfin, je tiens à remercier l’équipe de la vie scolaire, qui m’a accompagné tout au long de cette expérience. Leur soutien, leurs conseils et leurs encouragements m’ont permis de progresser et de mener à bien mes missions dans les meilleures conditions.</p>
                     </section>    
-                </section>
+                </section>    
+                <!--Script JavaScript pour faire en sorte que les cartes des baies sur retournent lorsque l'on clique dessus-->
+                <script>
+                    document.querySelectorAll('.carte-retourne').forEach(card => { 
+                        card.addEventListener('click', () => {
+                            card.classList.toggle('inverse');
+                        });
+                    });
+                </script>
         </main>
         <!-- Pied de page -->
         <footer>
