@@ -133,6 +133,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
 }
 
 .sections-accueil-box:hover {
@@ -399,6 +400,37 @@ footer {
   .carte-retourne .arriere {
     transform: rotateY(180deg);
   }
+
+
+/* STYLES POUR LES IMAGES GROSSISSANTES*/
+
+/* Fond de la modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image agrandie */
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+/* Bouton fermer */
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #ffffff;
+    cursor: pointer;
+}
 
   /* style pour la vidéo*/
 
