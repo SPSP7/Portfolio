@@ -300,9 +300,37 @@
                     </ul>
                     <h1>Déroulement du projet</h1>
                     <p>Tout d'abord, nous avons commencé par choisir les OS de nos PC et de notre serveur, puis nous avons créé 4 sous-réseaux à partir de la plage d'adresses IP qui nous a été fournie. Ensuite, nous avons commencé l'installation et la configuration de nos switch et routeur dans la baie et nous avons commencé la réalisation de nos schémas logiques et physiques.</p>
+                </section>
+            </section>
+            <br>
+            <section class="sections-accueil-boxes">
+             <div class="sections-accueil-box image-popup">
+              <img src="../DOC/Projet E6/Schéma_Physique_ALPHACENTAURI.png">
+              <p><em>Aperçu de notre Schéma Physique</em></p>
+             </div>
+             <div class="sections-accueil-box image-popup">
+              <img src="../DOC/Projet E6/Schéma_Logique_ALPHACENTAURI.png">
+              <p><em>Aperçu de notre Schéma Logique</em></p>
+             </div>
+            </section>
+            <br>
+            <section class="forme-page-2">
+             <section class="texte-main">
                     <p>Puis il fallut installer en double boot sur les 3 PC notre Windows 11 pour notre projet et désactiver la carte réseau du réseau SIO. Le but étant de faire une séparation claire entre le Windows et le réseau SIO pour les cours et notre Windows avec notre réseau pour notre projet. Ensuite nous avons connecté l'ensemble de nos PC à Internet grâce à la passerelle montante et au serveur DNS que M. PARENT nous avait fourni.</p>
                     <p>Après cela nous avons commencé l'installation de notre hyperviseur (Hyper-V) sur le serveur et nous avons paramétré l'accès à distance via telnet puis SSH à notre routeur et switch. Lorsque l'installation de l'hyperviseur s'est terminée, nous avons mis en place le bureau à distance sur l'hyperviseur et nous avons commencé à installer notre première VM pour notre Active Directory. Une fois cela fait, nous avons créé nos 4 VLAN sur notre routeur et adapté l'adressage IP de nos PC, switch, routeur, serveur, VM.</p>
-                    <p>Après coup, nous avons commencé la configuration de notre Active Directory (création de la forêt, promotion du serveur en contrôleur de domaine), avec la réalisation en premier lieu de notre schéma AGDLP, puis nous avons inséré nos 3 PC dans notre domaine et nous avons commencé l'installation et la configuration des éléments suivants :</p>
+              </section>
+            </section>
+            <br>
+            <section class="sections-accueil-boxes">
+             <div class="sections-accueil-box image-popup">
+              <img src="../DOC/Projet E6/Documentation_Switch_ALPHACENTAURI.png">
+              <p><em>Documentation du Switch</em></p>
+             </div>
+            </section>
+            <br>
+            <section class="forme-page-2">
+             <section class="texte-main">      
+              <p>Après coup, nous avons commencé la configuration de notre Active Directory (création de la forêt, promotion du serveur en contrôleur de domaine), avec la réalisation en premier lieu de notre schéma AGDLP, puis nous avons inséré nos 3 PC dans notre domaine et nous avons commencé l'installation et la configuration des éléments suivants :</p>
                     <ul>
                      <li>Serveur DNS.</li>
                      <li>GPO, UO</li>
@@ -311,6 +339,18 @@
                      <li>DHCP</li>
                      <li>Lien avec un serveur TrueNAS pour certains partages de fichiers.</li>
                     </ul>
+              </section>
+            </section>
+            <br>
+            <section class="sections-accueil-boxes">
+             <div class="sections-accueil-box image-popup">
+              <img src="../DOC/Projet E6/Arborescence_ActiveDirectory_ALPHACENTAURI.png">
+              <p><em>Aperçu de l'arborescence AGDLP</em></p>
+             </div>
+            </section>
+            <br>
+            <section class="forme-page-2">
+             <section class="texte-main"> 
                     <p>Enfin nous avons fini avec l'installation de deux VM Linux Debian pour nos serveurs Web, l'installation d'une VM Linux DEBIAN et des différents agents pour notre logiciel de supervision Zabbix, la configuration d'un serveur NTP et par la mise en place des règles de pare-feu sur notre routeur.</p>
                     <h1>Outils et technologies utilisés</h1>
                     <p>Au cours de ce projet, nous avons utilisé plusieurs outils et technologies :</p>
@@ -343,6 +383,7 @@
                     <h1>Bilan du projet</h1>
                     <p>Ce projet s’est révélé très formateur et enrichissant en compétences et connaissances pratiques, pour notre BTS, notre culture du monde de l'informatique et notre potentiel métier futur. Ce projet nous a permis de mettre en pratique nos connaissances théoriques acquises durant toute la première année, tout en découvrant la mise en place et la configuration de certains outils, comme l'Active Directory, l'hyperviseur Hyper-V, le serveur TrueNAS et le serveur Zabbix.</p>
                 </section>
+             </section>
                <!--Script JavaScript pour faire en sorte que les images grossissent lorsque l'on clique dessus-->
                 <script>
                     const modal = document.getElementById('imageModal');
