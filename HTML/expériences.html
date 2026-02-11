@@ -66,8 +66,10 @@
                 </span>
                 <br>
                 <section class="texte-main">
+                    <h3>Présentation de la structure d’accueil</h3>
                     <p>J’ai effectué mon stage au lycée Philibert Delorme, situé à L’Isle-d’Abeau (Isère), du 12 mai au 27 juin 2025. Il s’agit d’un établissement public d’enseignement secondaire proposant également plusieurs formations en BTS (GTLA, PME et Bioqualité).</p>
                     <p>Durant cette période, j’ai intégré l’équipe informatique du lycée, chargée de la gestion et de la maintenance du parc informatique. J’ai été placé sous la supervision de M. Louis GILLET, responsable informatique de l’établissement et mon ancien professeur de NSI. J'ai été recruté dans l'objectif de réaliser un long travail d'inventaire que M. GILLET voulait effectuer depuis longtemps, et dans une aide à l'assitance pour la gestion des pannes informatiques.</p>
+                    <h3>Présentation des missions réalisées</h3>
                     <p>Parmi les premières missions qui m’ont été confiées figurait la réalisation d’un inventaire complet des prises réseau et des versions de Windows installées sur les ordinateurs de toutes les salles de classe. Cette tâche nécessitait de me rendre dans chaque salle, de relever le numéro de chaque prise réseau, l’appareil qui y était connecté, ainsi que la version du système d’exploitation du poste. Tout au long de mon stage, j’ai tenu à jour un journal de bord sur Excel, permettant de suivre l’avancement de mes différentes missions.</p>
                 </section>
             </section>
@@ -223,10 +225,9 @@
                                 <li><span>Tuteur :</span> M. Cyril PERNIN, Chef de Projet Infrastructures Techniques du SI</li>
                                 <li><span>Missions :</span></li>
                                 <ul>
-                                    <li>Support utilisateur en présentiel et à distance.</li>
+                                    <li>Réalisation de flux sur Microsoft Power Automate.</li>
                                     <li>Petites tâches d'administration système.</li>
                                     <li>Mise à jour de la documentation.</li>
-                                    <li>Un petit projet si l'occasion se présente lors du stage.</li>
                                 </ul>
                             </ul>
                         </div>
@@ -234,7 +235,7 @@
                     
                     <br>
                     <span class="forme-page">
-                        <img src="../IMG/INDRASAS.png" title="INDRA SAS, Villefontaine">
+                        <img src="../IMG/INDRA_SAS.png" title="INDRA SAS, Villefontaine">
                     </span>
                     <br>
                     <section class="texte-main">
@@ -244,11 +245,11 @@
                     <br>
                     <section class="sections-accueil-boxes">
                         <div class="sections-accueil-box image-popup">
-                            <img src="../IMG/INDRA_Chiffres.jpg">
+                            <img src="../IMG/INDRA_Chiffres.png">
                             <p><em>Chiffres clés de l'entreprise</em></p>
                         </div>
                         <div class="sections-accueil-box image-popup">
-                            <img src="../IMG/INDRA_Organigramme.jpg">
+                            <img src="../IMG/INDRA_Organigramme.png">
                             <p><em>Organigramme de l'entreprise</em></p>
                         </div>
                     </section>
@@ -267,11 +268,12 @@
                     <br>
                     <section class="sections-accueil-boxes">
                         <div class="sections-accueil-box image-popup">
-                            <img src="../IMG/INDRA_Organigramme_IT.jpg">
+                            <img src="../IMG/INDRA_Organigramme_IT.png">
                             <p><em>Organigramme du DSI</em></p>
                         </div>
                     </section>
                     <br>
+                    <section class="forme-page-2">
                     <section class="texte-main">
                         <p>Parmi ces membres, j’ai eu l’occasion de travailler avec plusieurs d’entre eux comme :</p>
                         <ul>
@@ -279,9 +281,146 @@
                             <li>Youssouf SOULAIMANA, technicien SI, membre de l’équipe Infrastructure & Réseaux, avec qui j’ai effectué certaines tâches lors de mon stage.</li>
                             <li>Audrey PHOXAYSY, avec qui j’ai effectué certaines tâches lors de mon stage.</li>
                         </ul>
+                        <br>
+                        <h3>Présentation des missions réalisées</h3>
+                        <h4>Inventaire</h4>
+                        <p>Cette première mission à INDRA consistait à réaliser l’inventaire du matériel informatique du personnel. Le but était de récupérer le numéro de série des PC et des téléphones portables professionnels ainsi que les codes IMEI des cartes SIM, sur les trois sites (Villefontaine, Vienne et Romorantin) géré par le SI de Villefontaine.</p>
+                        <p>Pour réaliser cette tâche j’ai principalement utilisé les technologies suivantes : </p>
+                        <ul>
+                            <li>Excel pour noter les informations ;</li>
+                            <li>Outlook pour l’envoi de mail ;</li>
+                            <li>Avaya Workplace, ainsi que Microsoft Teams pour les appels.</li>
+                        </ul>
+                        <p>La principale difficulté pour cette mission était la disponibilité des personnes pour l’inventaire rendant la tâche longue à réaliser.</p>
+                        <br>
+                        <h4>Rangement des locaux et tri du matériel</h4>
+                        <p>L’objectif de cette mission était de ranger le local du premier étage où se situe tout le matériel informatique (ordinateur, clavier, souris, câbles, etc.) de le répertorier dans un fichier Excel, et d’en faire le tri. Il fallait également faire le tri de tout le matériel présent dans le second local, au rez-de-chaussée, où se situe la benne pour le recyclage et les baies de brassage.</p>
+                        <p>Pour réaliser cette tâche j’ai principalement utilisé Excel pour noter les informations.</p>
+                        <p>Ayant déjà réalisés ces deux missions lors de mon premier stage j’ai pu les réaliser efficacement en autonomie.</p>
+                        <br>
+                        <h4>Réalisation de scripts PowerShell</h4>
+                        <p>Première mission réellement technique puisqu’elle consistait à créer deux scripts PowerShell. </p>
+                        <p>Le premier devait envoyer un mail indiquant l’expiration prochaine du compte IT Windows de la personne. Ce mail devait s’adresser au responsable de la personne ou à la personne directement, si aucun responsable n’était renseigné dans l’Active Directory. Le but de ce script était de pallier le problème d’expiration de compte IT Windows du personnel, dont la date d’expiration du compte est basée sur la date de fin de contrat.</p>
+                        <p>Le second consistait lui aussi en l’envoi d’un mail indiquant les clés BitLocker manquantes des ordinateurs dans l’Active Directory. Ce mail devait s’adresser au chef de projets Infrastructure & réseaux du DSI. Le but de ce script était de pallier le problème de la perte des clés BitLocker, entraînant une impossibilité d’accéder aux données.</p>
+                        <p>Après avoir créés ces scripts, il fallait planifier leur exécution (1 fois par jour pour le premier et 1 fois par semaine pour le second), grâce au planificateur de tâche de Windows.</p>
+                        <p>Pour réaliser cette tâche j’ai principalement utilisé les technologies suivantes : </p>
+                        <ul>
+                            <li>PowerShell ISE pour la réalisation du script et les tests ;</li>
+                            <li>l’Active Directory pour trouver le nom des variables pour récupérer leur valeur ;</li>
+                            <li>Le planificateur de tâches de Windows pour planifier l’exécution des scripts.</li>
+                        </ul>
+                        <p>La principale difficulté se situe sur le premier script, car au début le script ne fonctionnait pas correctement à cause d’un problème de lecture avec mon compte dans l’Active Directory. Dès lors que ce problème fut résolu je n’eus pas d’autres complications.</p>
+                        <p>Cette mission fut l’une des plus intéressantes car elle m’a permis de retravailler sur des scripts PowerShell et d’apprendre des choses plus poussés comme l’envoi de mail ou encore des commandes comme ‘Get-ADUser’, ‘Get-ADComputer’, etc. pour communiquer avec l’Active Directory.</p>
+                    </section>
                     </section>
                     <br>
-                    
+                    <section class="sections-accueil-boxes">
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/PS_Script_Mail_Fin_de_compte1.png">
+                            <p><em>Aperçu du script 'Mail-Date-de-fin-de-compte'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/PS_Script_Mail_Fin_de_compte2.png">
+                            <p><em>Aperçu du script 'Mail-Date-de-fin-de-compte'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/PS_Script_BitLocker1.png">
+                            <p><em>Aperçu du script 'Vérification-clés-BitLocker'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/PS_Script_BitLocker2.png">
+                            <p><em>Aperçu du script 'Vérification-clés-BitLocker'</em></p>
+                        </div>
+                    </section>
+                    <br>
+                    <section class="forme-page-2">
+                        <section class="texte-main">
+                            <h4>Réalisation de flux automatisé via Microsoft Power Automate et de formulaire via Microsoft Forms</h4>
+                            <p>Autre mission purement technique consistant elle aussi en la réalisation de trois flux cloud automatisés sur Microsoft Power Automate, liés à trois formulaires Microsoft Forms.</p>
+                            <p>Le premier consistait à récupérer les réponses du formulaire pour la création ou la suppression de compte(s) informatique, une demande d’approbation est alors envoyée au manager du demandeur pour confirmation, si elle est approuvée, les réponses sont envoyés par mail au support IT pour création d’un ticket, ainsi qu’au service correspondant pour la création d’un compte spécifique (SAP Concur, Egencia). Dans le cas contraire, un mail est envoyé au demandeur pour l’informer du refus.</p>
+                            <p>Le deuxième consistait à récupérer les réponses du formulaire de demande d’installation de nouveau matériel(s) informatique, puis envoyait à nouveau une demande d’approbation au manager du demandeur pour confirmation et ensuite envoyait les réponses au support IT pour création d’un ticket.</p>
+                            <p>Enfin, le dernier flux devait récupérer les réponses du formulaire de modification ou de suppression de droits d’accès, en suivant la même logique que les deux flux susmentionnés.</p>
+                            <p>J’ai également dû créer ou modifier les trois formulaires.</p>
+                            <p>Pour réaliser cette tâche j’ai principalement utilisé les technologies suivantes : </p>
+                            <ul>
+                                <li>Microsoft Power Automate pour la réalisation des flux ;</li>
+                                <li>Microsoft Forms pour les formulaires.</li>
+                            </ul>
+                            <p>La principale difficulté pour cette tâche était que j’étais complètement débutant sur Power Automate et qu’au début je n’arrivais pas à faire la connexion entre mon flux et un de mes formulaires. Toutefois après avoir reçu l’aide d’un de mes collègues, j’ai pu avancer correctement sans rencontrer d’autres problèmes.</p>
+                            <p>Cette mission a été la plus enrichissante car elle m’a permis de découvrir Power Automate qui était un outil que je ne connaissais pas et que j’ai beaucoup aimé manipuler.</p>
+                        </section>
+                    </section>
+                    <br>
+                    <section class="sections-accueil-boxes">
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Matériel1.png">
+                            <p><em>Aperçu du flux 'Demande d'installation de nouveau matériel'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Matériel2.png">
+                            <p><em>Aperçu du flux 'Demande d'installation de nouveau matériel'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Création1.png">
+                            <p><em>Aperçu du flux 'Demande de création ou de suppression de compte(s) IT'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Création2.png">
+                            <p><em>Aperçu du flux 'Demande de création ou de suppression de compte(s) IT'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Création3.png">
+                            <p><em>Aperçu du flux 'Demande de création ou de suppression de compte(s) IT'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Modification1.png">
+                            <p><em>Aperçu du flux 'Demande de modification d'accès'</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/Flux_Modification2.png">
+                            <p><em>Aperçu du flux 'Demande de modification d'accès'</em></p>
+                        </div>
+                    </section>
+                    <br>
+                    <section class="forme-page-2">
+                        <section class="texte-main">
+                            <h4>Projet création serveur GLPI</h4>
+                            <p>Petit projet réalisé durant mon stage qui s’appuyait sur le travail que j’ai effectué au cours de l’inventaire et du rangement ainsi que du tri du matériel dans les locaux. Au cours de ce projet, supervisé par Cyril, j’ai travaillé avec Youssouf et Audrey. L’objectif était de créer une machine virtuelle qui accueillerait un serveur GLPI pour renseigner tout le matériel présent au sein de l’entreprise.</p>
+                            <p>Pour ce qui est de la gestion de projet, nous avons fait une première réunion de présentation du projet (20/01), puis nous avons programmé deux nouvelles réunions de suivi (27/01 et 03/02).</p>
+                            <p>Avec Youssouf, nous avons commencé par installer Oracle VirtualBox sur mon PC puis nous avons créé une machine virtuelle sous la distribution Linux Debian 13. Je me suis chargé personnellement de l’installation de Debian, et des paramétrages IP pour se connecter au réseau. Cependant après plusieurs problèmes avec la machine, et sur recommandation de Cyril, nous avons retiré la machine de mon poste et nous en avons installé une autre directement sur le serveur VSphere d’INDRA. Après cela, Youssouf m’a envoyé la liste des commandes à faire pour installer Mariadb, créer la base de données GLPI, apache2 et activer l’installation de GLPI en accès web. Une fois cela fait, j’ai téléchargé l’ensemble des extensions PHP manquantes pour l’installation de GLPI.</p>
+                            <p>Avec Audrey, nous avons refait un tri du matériel dans le local de stockage, puis j’ai rentré toutes les informations du Stock dans GLPI en créant nos propres actifs personnalisés avec les catégories qui nous intéressait. Pendant ce temps Youssouf s’était occupé de faire la connexion LDAP entre l’AD et GLPI pour faire remonter tous les utilisateurs, ainsi que les agents GLPI pour récupérer des informations sur les PC et téléphones professionnels.</p>
+                            <p>J’ai également, dû écrire une procédure pour l’ajout et le retrait de matériel dans le serveur GLPI.</p>
+                            <p>Pour réaliser cette tâche j’ai principalement utilisé les technologies suivantes : </p>
+                            <ul>
+                                <li>Oracle VirtualBox et VMware vSphere pour l’installation des machines virtuelles ;</li>
+                                <li>Linux Debian 13 pour l’installation de Mariadb, apache2 et GLPI ;</li>
+                                <li>GLPI pour renseigner toutes les informations et créer les actifs personnalisés.</li>
+                            </ul>
+                            <p>La principale difficulté a été l’installation de la première machine virtuelle sur mon poste qui a crashé à la fin du processus d’installation de Debian. De plus on a eu un problème de connexion au réseau car on utilisait une adresse IP fournit par un serveur DHCP sur un autre VLAN et que la machine virtuelle se situait sur mon poste qui lui-même avait un pare-feu qui bloquait une partie du trafic rendant impossible une connexion à internet. Raison pour laquelle nous sommes passés sur le serveur VMware vSphere.</p>
+                            <p>Ce projet m’a permis de retravailler mes compétences sur Linux et en installation de machine virtuelle, de découvrir VMware vSphere et d’approfondir mes connaissances et ma maîtrise d’un serveur GLPI.</p>
+                        </section>
+                    </section>
+                    <br>
+                    <section class="sections-accueil-boxes">
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/SRV_GLPI1.png">
+                            <p><em>Aperçu du serveur GLPI</em></p>
+                        </div>
+                        <div class="sections-accueil-box image-popup">
+                            <img src="../IMG/SRV_GLPI2.png">
+                            <p><em>Aperçu du serveur GLPI</em></p>
+                        </div>
+                    </section>
+                    <br>
+                    <section class="forme-page-2">
+                        <section class="texte-main">
+                            <h4>Petites tâches annexes</h4>
+                            <p>Au début de mon stage j’ai accompagné Youssouf, pour la réalisation de quelques tickets. Tels que la préparation d’un nouveau PC pour l’arrivée d’un nouveau collaborateur, la suppression et l’ajout d’utilisateur et de droits dans l’Active Directory ou encore un dépannage pour un problème de connexion de session.</p>
+                            <p>Une autre petite tâche que j’ai été effectué avec Cyril, fut dans un premier temps, la récupération d’une livraison d’antenne Wi-Fi et de son stockage dans un des locaux. Puis, dans un second temps, en autonomie, la vérification du contenu de la livraison, c’est à dire au contrôle du bon nombre de modèle d’antenne Wi-Fi.</p>
+                            <p>À la fin de mon stage, Vincent, le DSI, m’a demandé d’effectuer quelques vérifications d’informations et modifications sur plusieurs contrat B2B  d’INDRA.</p>
+                        </section>
+                    </section>
+                    <br>
 
                     <h2 id="SHS">Stage hors scolarisation</h2> 
                     <span class="texte-box">
@@ -306,8 +445,10 @@
                     </span>
                     <br>
                     <section class="texte-main">
+                        <h3>Présentation de la structure d’accueil</h3>
                         <p>J’ai effectué mon stage au collège du Sacré-Cœur à Annonay, sur trois périodes : du 22 janvier au 16 février, du 11 mars au 6 avril, et du 13 mai au 25 mai 2024. Il s’agit d’un établissement privé catholique accueillant des élèves du collège.</p>
                         <p>Durant cette expérience, j’ai intégré l’équipe de vie scolaire, composée d’éducateurs chargés de veiller au respect du règlement intérieur, à la sécurité des élèves et à la surveillance des espaces communs, tels que la cour ou les salles d’étude. J'ai été recruté dans l'objectif d'aider les élèves dans leurs devoirs et d'assister le personnel de la vie scolaire dans leurs missions.</p>
+                        <h3>Présentation des missions réalisées</h3>
                         <p>Ma première mission consistait en la surveillance des élèves, aussi bien dans la cour pendant les récréations que durant les heures d’étude. Au début du stage, pour la surveillance en étude, j’étais accompagné par un éducateur expérimenté, puis j’ai progressivement assuré la surveillance des études en autonomie. Lors de ces temps d’étude, il arrivait que certains élèves souhaitent travailler en groupe ou obtenir de l’aide pour leurs devoirs. Dans ces cas, j’étais autorisé à les accompagner dans une salle dédiée afin de les aider dans leur travail scolaire.</p>
                         <p>Ma seconde mission concernait l’animation du foyer des élèves, ouvert chaque jour de 12 h 45 à 13 h 45. J’étais chargé de l’ouverture, de la surveillance et de la fermeture du foyer, en veillant à ce que les activités se déroulent dans le calme et le respect des règles. J’étais parfois assisté par des élèves de troisième, habituellement responsables de l’animation du lieu.</p>
                         <p>Ce stage m’a apporté une expérience particulièrement enrichissante sur le plan personnel. Il m’a permis de développer ma confiance en moi et d’améliorer ma capacité à communiquer et interagir avec les autres.</p>
