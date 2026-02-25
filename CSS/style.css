@@ -2,6 +2,7 @@
 
 /* Bannière */
 .banner {
+	margin-top: 5px;
     background-color: #0080FF;
     color: white;
     text-align: center;
